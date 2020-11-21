@@ -388,7 +388,7 @@ _bt_binsrch(Relation rel,
 
 	cmpval = key->nextkey ? 0 : 1;	/* select comparison value */
 
-	while (high > low)
+	while (high > low)  // Hacking PostgresSQL: Data Access Methods, B-tree concept
 	{
 		OffsetNumber mid = low + ((high - low) / 2);
 
