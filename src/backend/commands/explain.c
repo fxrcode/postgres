@@ -811,7 +811,7 @@ ExplainPrintTriggers(ExplainState *es, QueryDesc *queryDesc)
  *    Print summarized JIT instrumentation from leader and workers
  */
 void
-ExplainPrintJITSummary(ExplainState *es, QueryDesc *queryDesc)
+ExplainPrintJITSummary(ExplainState *es, QueryDesc *queryDesc)  // Hacking PostgreSQL, Analysis of a query
 {
 	JitInstrumentation ji = {0};
 
