@@ -1131,7 +1131,7 @@ ExplainNode(PlanState *planstate, List *ancestors,
 		es->workers_state = NULL;
 
 	/* Identify plan node type, and print generic details */
-	switch (nodeTag(plan))
+	switch (nodeTag(plan))  // Hacking PostgreSQL, Analysis of a query
 	{
 		case T_Result:
 			pname = sname = "Result";
