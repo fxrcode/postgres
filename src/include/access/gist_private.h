@@ -72,7 +72,7 @@ typedef struct
  * (that is, it's reset after each tuple).  However, tempCxt can be the same
  * as scanCxt if we're not bothering with per-tuple context resets.
  */
-typedef struct GISTSTATE
+typedef struct GISTSTATE  // Hacking PostgreSQL: Data Access methods, GiST source code organization
 {
 	MemoryContext scanCxt;		/* context for scan-lifespan data */
 	MemoryContext tempCxt;		/* short-term context for calling functions */
