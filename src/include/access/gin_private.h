@@ -53,7 +53,7 @@ typedef struct GinOptions
 /*
  * GinState: working data structure describing the index being worked on
  */
-typedef struct GinState
+typedef struct GinState  // Hacking PostgreSQL: Data Access methods, GiST source code organization
 {
 	Relation	index;
 	bool		oneCol;			/* true if single-column index */

@@ -339,7 +339,7 @@ _bt_moveright(Relation rel,
  * the given page.  _bt_binsrch() has no lock or refcount side effects
  * on the buffer.
  */
-static OffsetNumber
+static OffsetNumber		// Hacking PostgreSQL, sec 2, lab: B-tree intrapage search
 _bt_binsrch(Relation rel,
 			BTScanInsert key,
 			Buffer buf)
